@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MARHABA — موقع المشروع</title>
+    <meta name="description" content="موقع مشروع MARHABA يعمل عبر GitHub Pages" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <h1>مرحباً بك 👋</h1>
+      <p>هذا موقع لمشروع <strong>MARHABA</strong> مستضاف عبر GitHub Pages لحساب LEZGHEM32.</p>
+      <nav>
+        <a href="#about">عن المشروع</a>
+        <a href="#features">المزايا</a>
+        <a href="#contact">تواصل</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section id="about">
+        <h2>عن المشروع</h2>
+        <p>
+          هذه صفحة أولية يمكنك توسيعها بإضافة صفحات وأقسام جديدة.
+          كل تحديث تدفعه إلى الفرع <code>main</code> سيتم نشره تلقائياً.
+        </p>
+      </section>
+
+      <section id="features">
+        <h2>المزايا</h2>
+        <ul>
+          <li>استضافة مجانية عبر GitHub Pages</li>
+          <li>نشر تلقائي عبر GitHub Actions</li>
+          <li>دعم نطاق مخصص وHTTPS</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>تواصل</h2>
+        <p>ضع هنا روابط الحسابات أو بريد التواصل الخاص بالمشروع.</p>
+      </section>
+    </main>
+
+    <footer class="container">
+      <small>© <span id="y"></span> LEZGHEM32 — جميع الحقوق محفوظة.</small>
+    </footer>
+
+    <script>
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
