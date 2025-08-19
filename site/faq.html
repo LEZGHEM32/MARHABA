@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>الأسئلة الشائعة — مرحبا</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+        <a href="./index.html" class="brand" data-i18n="brand.name">مرحبا</a>
+        <nav class="inline-nav">
+          <a href="./index.html" data-i18n="nav.home">الرئيسية</a>
+          <a href="./destinations.html" data-i18n="nav.destinations">الوجهات</a>
+          <a href="./how-it-works.html" data-i18n="nav.howItWorks">كيف تعمل</a>
+          <a href="./partners.html" data-i18n="nav.partners">الشركاء</a>
+          <a href="./about.html" data-i18n="nav.about">من نحن</a>
+          <a href="./faq.html" data-i18n="nav.faq" aria-current="page">الأسئلة الشائعة</a>
+          <a href="./contact.html" data-i18n="nav.contact">تواصل</a>
+        </nav>
+        <div class="buttons">
+          <a class="btn btn--ghost" href="#" data-i18n="cta.signIn">تسجيل الدخول</a>
+          <a class="btn btn--primary" href="#" data-i18n="cta.signUp">إنشاء حساب</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1 data-i18n="page.faq.title">الأسئلة الشائعة</h1>
+        <p class="lead" data-i18n="page.faq.lead">إجابات سريعة لأبرز الأسئلة.</p>
+      </div>
+    </section>
+
+    <main class="container">
+      <details class="card" open>
+        <summary><strong data-i18n="faq.q1">هل الأسعار ثابتة؟</strong></summary>
+        <p data-i18n="faq.a1">تختلف حسب الموسم وعدد المسافرين ومزوّد الخدمة.</p>
+      </details>
+      <details class="card">
+        <summary><strong data-i18n="faq.q2">ما سياسة الإلغاء؟</strong></summary>
+        <p data-i18n="faq.a2">يمكن الإلغاء حتى 48 ساعة قبل موعد الرحلة لاسترداد كامل.</p>
+      </details>
+      <details class="card">
+        <summary><strong data-i18n="faq.q3">هل الرحلات مناسبة للعائلات؟</strong></summary>
+        <p data-i18n="faq.a3">نعم، يوجد خيارات مناسبة لمختلف الأعمار والمستويات.</p>
+      </details>
+    </main>
+
+    <footer>
+      <div class="container">
+        <small data-i18n="footer.rights">© 2025 مرحبا. جميع الحقوق محفوظة.</small>
+      </div>
+    </footer>
+
+    <script src="./scripts/i18n.js" data-i18n-auto data-locale="ar" data-path="./i18n/ar.json" defer></script>
+  </body>
+</html>
