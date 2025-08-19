@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>مرحبا — الرئيسية</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+        <a href="./index.html" class="brand" data-i18n="brand.name">مرحبا</a>
+        <nav class="inline-nav">
+          <a href="./index.html" data-i18n="nav.home" aria-current="page">الرئيسية</a>
+          <a href="#" data-i18n="nav.destinations">الوجهات</a>
+          <a href="#" data-i18n="nav.howItWorks">كيف تعمل</a>
+          <a href="#" data-i18n="nav.partners">الشركاء</a>
+          <a href="#" data-i18n="nav.about">من نحن</a>
+          <a href="#" data-i18n="nav.faq">الأسئلة الشائعة</a>
+          <a href="#" data-i18n="nav.contact">تواصل</a>
+        </nav>
+        <div class="buttons">
+          <a class="btn btn--ghost" href="#" data-i18n="cta.signIn">تسجيل الدخول</a>
+          <a class="btn btn--primary" href="#" data-i18n="cta.signUp">إنشاء حساب</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1 data-i18n="brand.name">مرحبا</h1>
+        <p class="lead">منصّة لحجز الرحلات الصحراوية وتجارب المغامرة.</p>
+        <div class="buttons">
+          <a class="btn btn--primary" href="#" data-i18n="cta.exploreTrips">اكتشف الرحلات</a>
+          <a class="btn btn--secondary" href="#" data-i18n="cta.becomeProvider">سجّل كمزوّد</a>
+        </div>
+        <div style="max-width:520px;">
+          <input class="input" type="search" data-i18n-attr="placeholder" data-i18n-placeholder="search.placeholder" />
+        </div>
+      </div>
+    </section>
+
+    <main class="container">
+      <section>
+        <h2 data-i18n="nav.destinations">الوجهات</h2>
+        <div class="grid grid--3">
+          <article class="card">
+            <img class="trip-card__image" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop" alt="صحراء" />
+            <h3 style="margin-top:12px;">تجربة التخييم في الصحراء</h3>
+            <p class="muted">3 أيام • مستوى سهل</p>
+            <div class="buttons">
+              <a class="btn btn--primary" href="#" data-i18n="cta.bookNow">احجز الآن</a>
+              <a class="btn btn--ghost" href="#" data-i18n="trip.itinerary">برنامج الرحلة</a>
+            </div>
+          </article>
+          <article class="card">
+            <img class="trip-card__image" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="كثبان" />
+            <h3 style="margin-top:12px;">جولة غروب الشمس على الكثبان</h3>
+            <p class="muted">يوم واحد • مستوى متوسط</p>
+            <div class="buttons">
+              <a class="btn btn--primary" href="#" data-i18n="cta.bookNow">احجز الآن</a>
+              <a class="btn btn--ghost" href="#" data-i18n="trip.itinerary">برنامج الرحلة</a>
+            </div>
+          </article>
+          <article class="card">
+            <img class="trip-card__image" src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop" alt="واحة" />
+            <h3 style="margin-top:12px;">استكشاف الواحات</h3>
+            <p class="muted">يومان • مستوى سهل</p>
+            <div class="buttons">
+              <a class="btn btn--primary" href="#" data-i18n="cta.bookNow">احجز الآن</a>
+              <a class="btn btn--ghost" href="#" data-i18n="trip.itinerary">برنامج الرحلة</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>رسائل النظام</h2>
+        <div class="alert alert--success" data-i18n="toast.bookingSuccess">تم تأكيد الحجز بنجاح!</div>
+        <div class="alert alert--error" data-i18n="toast.bookingFailed">تعذر إتمام الحجز.</div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <small data-i18n="footer.rights">© 2025 مرحبا. جميع الحقوق محفوظة.</small>
+      </div>
+    </footer>
+
+    <script src="./scripts/i18n.js" data-i18n-auto data-locale="ar" data-path="./i18n/ar.json" defer></script>
+  </body>
+</html>
